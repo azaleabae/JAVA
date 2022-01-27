@@ -11,7 +11,7 @@ public class Ex5_2_4 {
 		int[]score = {100, 88, 100, 100, 90};
 		
 		for(int i = 0; i < score.length; i++) {
-			sum += score[i];  // sum = sum + score[i];
+			sum += score[i];  // sum = sum + score[i]; 마지막 배열이 될때 까지 계속 더해 나가
 		}
 		average = sum/(float)score.length; // 계산결과를 float로 얻어야 되니까
 		System.out.println("총점 : "+ sum);
