@@ -25,7 +25,9 @@ public class Ex6_1_3 {
 		t.channel = 7; // Tv인스턴스의 멤버변수 channel의 값을 7로 한다.
 		
 		t.channelDown(); // Tv인스턴스의 메서드 channelDown()을 호출한다.
-		System.out.println("현재채널은 " + t.channel + "입니다.");
+		
+		System.out.println("현재채널은 " + t.channel + "입니다."); 
+		//6이 나오는데 왜 6이냐면 위에 선언한 channel은 7인데 내가 channeldown메서드로 채널을 하나 내렸기 때문에 6이 나옴 
 		
 	}
 }

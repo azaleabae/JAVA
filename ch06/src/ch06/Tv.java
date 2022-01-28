@@ -1,10 +1,12 @@
 package ch06;
 
-public class Ex6_7 {
+class Tv {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
+
+	int channel;
 
 }
