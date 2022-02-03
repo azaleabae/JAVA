@@ -14,8 +14,10 @@ public class Ex6_3 {
 		
 		Tv[] tvArr2 = {new Tv(), new Tv(), new Tv()};
 
+		
 		for(int i=0; i<tvArr2.length; i++) {
 			System.out.println(tvArr2[i]);
+			System.out.println(Arrays.toString(tvArr2));
 		}
 		
 	}
