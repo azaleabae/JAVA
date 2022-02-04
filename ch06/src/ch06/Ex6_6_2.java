@@ -8,8 +8,8 @@ public class Ex6_6_2 {
 		System.out.println("m.add(3, 3L) 결과:" + m.add(3,3L));
 		System.out.println("m.add(3L, 3L) 결과:" + m.add(3L,3L));
 		
-		int[] a = {100,200,300};
-		System.out.println("m.add(a) 결과: " + m.add(a));
+//		int[] a = {100,200,300};
+//		System.out.println("m.add(a) 결과: " + m.add(a));
 	}
 	
 }
@@ -19,4 +19,19 @@ class Math{
 		System.out.print("int add(int a, int b) - ");
 		return a+b;
 	}
+	
+
+	long add(int a, long b) {
+		System.out.print("long add(int a, int b) - ");
+		return a+b;
+	}
+	long add(long a, int b) {
+		System.out.print("long add(int a, int b) - ");
+		return a+b;
+	}
+	long add(long a, long b) {
+		System.out.print("long add(int a, int b) - ");
+		return a+b;
+	}
+	
 }

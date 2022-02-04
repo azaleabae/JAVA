@@ -11,7 +11,7 @@ public class Ex6_6_1 {
 		// 2. 매개변수의 개수 또는 타입이 달라야 한다.
 		// 3. 반환 타입은 영향없다.
 		
-		// long add(int a, long b) { returen a+b;}
+		// long add(int a, long b) { return a+b;}
 		// long add(long a, int b) { return a+b; }
 	}
 
