@@ -17,7 +17,7 @@ class Time{
 	}
 }
 
-public class Ex7_6_2 {
+class Ex7_6_2 {
 	public static void main(String[] args) {
 		Time t = new Time();
 //		t.hour = -100;

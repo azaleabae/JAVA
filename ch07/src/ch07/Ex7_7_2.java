@@ -9,7 +9,11 @@ package ch07;
 	// 부모 자식간에는 가능하지만 형제관계에서는 불가능
 
 		class Car {}
-		class FireEngine extends Car{}
+		class FireEngine extends Car{
+			public void water() {}
+
+			
+		}
 		class Ambulance extends Car{}
 	
 		class CarTest1{
