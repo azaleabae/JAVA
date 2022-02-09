@@ -1,16 +1,23 @@
 package ch07;
 
-public class Unit {
+public class DarkElf {
 
-	public static void main(String[] args) {
+	public  void main(String[] args) {
 //		Unit[] group = new Unit[3];
 //		group[0] = new Wicth();
 //		group[1] = new harpy();
 //		group[2] = new Hydra();
 		
-		Unit[]group = {new Witch(), new Harpy(), new Hudra()};
+		Unit[] group = { new Witch(), new Harpy(), new Hydra() };
+		
+		
+		for (int i = 0; i < group.length; i++) {
+			group[i].move(100, 200);
+		}
 	}
 	
+	
+
 	abstract class Unit{
 		int x,y;
 		abstract void move(int x, int y);
@@ -36,5 +43,4 @@ public class Unit {
 		}
 		void fastswim() {/*빨리헤엄치기"*/}
 	}
-
 }
