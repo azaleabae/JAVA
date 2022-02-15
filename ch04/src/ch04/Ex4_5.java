@@ -4,7 +4,7 @@ public class Ex4_5 {
 
 	public static void main(String[] args) {
 
-		int score = 95;
+		int score = 85;
 		
 		if(90 <= score) {
 			System.out.println("굉장한 점수네요! 합격입니다.");

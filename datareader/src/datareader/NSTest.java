@@ -126,9 +126,9 @@ public class NSTest {
 	}
 }
 
-class Certification {
-
-	String ceNum;
+//class Certification {
+//
+//	String ceNum;
 //	String ceType;
 //	String ceFarm;
 //	String ceItem;
@@ -137,4 +137,4 @@ class Certification {
 //	String ceStart;
 //	String ceEnd;
 
-}
+//}

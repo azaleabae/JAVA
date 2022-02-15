@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class input {
@@ -68,19 +69,20 @@ class input {
 		}
 
 	}
-
+	ArrayList<Certification> ItemList = new ArrayList<>();
+	
 }
 
-//class Certification {
-//
-//	String ceNum;
-//	String ceType;
-//	String ceFarm;
-//	String ceItem;
-//	String cuArea;
-//	String prPlan;
-//	String ceStart;
-//	String ceEnd;
-//	
-//
-//}
+class Certification {
+
+	String ceNum;
+	String ceType;
+	String ceFarm;
+	String ceItem;
+	String cuArea;
+	String prPlan;
+	String ceStart;
+	String ceEnd;
+	
+
+}
