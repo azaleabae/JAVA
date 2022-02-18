@@ -5,8 +5,8 @@ public class CT1_2 {
 
 		int[] arr = new int[100];
 
-//		for (int i = 0; i < arr.length; i++) { // 배열의 총
-//			arr[i] += i; // arr[i] = arr[i] + 1;
+//		for (int i = 0; i < arr.length; i++) { // 배열의 총길이 구하기
+//			arr[i] += i; // arr[i] = arr[i] + 1; // 배열의 모든 주소에 값을 넣어준다.
 //		}
 
 		int sum = 0;
