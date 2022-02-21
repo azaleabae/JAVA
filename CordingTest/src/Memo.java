@@ -7,9 +7,11 @@ public class Memo{
 		
 		Scanner scan = new Scanner(System.in);
 		
+		
 		System.out.println("입고입력할 날짜를 선택해주세요 1일~31일");
 		int day = scan.nextInt()-1; // 0~30개니까 입력받은 정수 값에서 1을 뺌
 		
+//		java.lang.IndexOutOfBoundsException
 		
 		System.out.println("입고된 갯수를 정수를 이용해 입력해주십시오");
 		int num = scan.nextInt();
@@ -47,14 +49,14 @@ public class Memo{
 
 			int choose = scan.nextInt();
 
-			while (0 <= choose && choose <= 3) { // 내가 입력한 값이 1보다 크거나 같고 3보다 작거나 같을때
+			while (0 <= choose && choose <= 3) { // 내가 입력한 값이 0~3 사이일 때
 				if (choose == 0) {
 					System.out.println("프로그램이 종료 됩니다.");
 
 				} else if (choose == 1) {
 					System.out.println("월에 입고된 갯수는" + inMonth + "개 입니다.");
 
-					System.out.println("계속 진행하려면 1, 아니라면 2를 눌러주세요.");
+					System.out.println("계속 진행하려면 1, 종료하려면 2를 눌러주세요.");
 
 					int choose2 = scan.nextInt();
 
@@ -70,15 +72,22 @@ public class Memo{
 
 				} else if (choose == 2) {
 					System.out.println("현재 불량개수는" + dfItem + "입니다.");
+					System.out.println(""); // 한줄 비우기
+					System.out.println("");
+					continue loop;
 
 				} else if (choose == 3) {
 					System.out.println("현재 전체 잔여갯수는" + total + "입니다.");
-
+					System.out.println("");
+					System.out.println("");
+					continue loop;
 				}
 
 				break loop;
 			} // while2 끝
-			if (0 < choose || choose > 3) { // 1보다 작거나 3보다 큰 수를 입력하면 나오는 메시지
+			if ( 3 < choose) { // 3보다 큰 수를 입력하면 나오는 메시지
+				
+				System.out.println("");
 				System.out.println("1~3사이의 숫자만 입력가능합니다. 올바른 값을 입력해 주십시오.");
 				System.out.println("/////////////////////////////////////////////");
 				System.out.println("");

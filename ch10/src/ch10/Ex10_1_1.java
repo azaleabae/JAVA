@@ -1,4 +1,4 @@
-package ch09;
+package ch10;
 
 // 날짜와 시간
 
@@ -6,7 +6,7 @@ package ch09;
 
 		// 날짜와 시간을 다룰 목적으로 만들어진 클래스(JDK1.0)
 		// date의 메서드는 거의 deprecated 되었지만, 여전히 쓰이고 있다.
-
+							
 	
 	// java.util.Calendar 
 
@@ -17,6 +17,6 @@ package ch09;
 
 		//date와 Calendar의 단점을 개선한 새로운 클래스들을 제공(JDK1.8)
 
-public class Ex9_12_1 {
+public class Ex10_1_1 {
 
 }
