@@ -1,5 +1,10 @@
 package ch01;
 
+// 용어 메모
+
+	// iv - 지역변수
+	// cv - 클래스변수
+
 public class Hello {
 
 	public static void main(String[] args) {

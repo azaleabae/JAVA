@@ -1,10 +1,12 @@
+import java.util.Arrays;
+
 // 로또 생성
 // 숫자는 총7개 겹치면안됨
 // i1~i7 까지 만들어서 돌릴거임 for문을 할지 while 문을 할지 모르겠음 ->  실패함 생각해보니까 그럼 math.random 쓰는게 아님
 // 보너스 따로 빼야함 length-1; 해주면 6개 출력되니까 마지막은 배열 주소값 출력 따로해주면 될듯
 // 배열로 했는데 이거 set이나 맵으로 고쳐야함 일단 여기까진 배열로는 짜는거 성공
 
-public class Lotto {
+public class LottoArray {
 
 	public static void main(String[] args) {
 
@@ -28,7 +30,9 @@ public class Lotto {
 		for (int a = 0; a < num.length-1; a++) {
 			
 			System.out.print(num[a] + " ");
+			
 		}
+		
 		System.out.println(" 보너스 값은 " + num[6] + " 입니다.");
 
 	}//main 끝
