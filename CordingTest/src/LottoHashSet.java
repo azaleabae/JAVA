@@ -10,10 +10,18 @@ public class LottoHashSet {
 		System.out.println("인생 직진");
 		Set set = new HashSet();
 
+//		for (int i = 0; set.size() < 7; i++) {
 		for (int i = 0; set.size() < 7; i++) {
 			int num = (int) (Math.random() * 45) + 1;
 //			set.add(new Integer(num)); 아랫줄과 동일
 			set.add(num);
+			
+			int bonus = (int)(Math.random()*45)+1;
+			while(bonus != num  ) {
+				set.add(bonus);
+				
+				break;
+			}
 			
 		}
 
@@ -22,11 +30,15 @@ public class LottoHashSet {
 		
 		for(int n = 0; n < 6; n++) {
 			System.out.print(list.get(n)+ " "); // 
+//			System.out.print(" *보너스 값은 " + bonus + "입니다.*");
+			
 		}
+		
+		// math.random() 으로 생성 
 		
 		
 
-		System.out.print(" *보너스 값은 " + list.get(6) + "입니다.*");
+		
 
 	}
 

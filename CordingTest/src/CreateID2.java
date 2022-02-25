@@ -1,11 +1,18 @@
+import java.util.Scanner;
 
 public class CreateID2 {
 
 	public String CreateID2(String id) {
 		
-	
+// 조건별로 단계를 나누기
+// id는 추천 아이디		
+// exclude는 제외할 것들		
 		
+		Scanner  sc = new Scanner(System.in);
 		
+		System.out.println("원하시는 ID를 입력하세요.");
+		
+		String str = sc.nextLine();
 
 		// 1단계 대문자를 소문자로
 		id = id.toLowerCase();
@@ -37,8 +44,9 @@ public class CreateID2 {
 			
 			
 			// 4. 콤마가 두개 이상이면 한개로 바꿔주기
-			for(int j = 0; j < id.length(); j++) {
-				if(id.indexOf(j) == '.') {
+			// ccount는 comma count
+			for(int ccount = 0; ccount < id.length(); ccount++) {
+				if(id.indexOf(ccount) == '.') {
 					id.replace("..", "."); // 한번 짜봣는데 될려나 몰르겠음
 				}
 				
@@ -47,6 +55,8 @@ public class CreateID2 {
 			if(id.length() == 0) {
 				id += 'a';
 			}
+			
+			System.out.println(id);
 			
 		}
 

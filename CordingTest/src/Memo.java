@@ -21,7 +21,8 @@ public class Memo{
 			daylist.add(i, 0);
 		} // ArrayList 특성 때문에 31개의 배열에 값을 미리 0으로 넣어줌
 		
-		daylist.set(day,num); // 입력 받은 날짜(day)에 입력받은 개수(num)를 저장
+		int save = daylist.set(day,num); // 입력 받은 날짜(day)에 입력받은 개수(num)를 저장
+		
 		
 		
 		int sum = 0; // 총점
@@ -34,7 +35,7 @@ public class Memo{
 		}
 		
 		long inMonth = sum;
-		long dfItem = inMonth / 1000; // 불량 defective items 1000개 중에 하나꼴로 불량발생
+		long dfItem = (inMonth + 10000) / 1000; // 불량 defective items. 1000개 중에 하나꼴로 불량발생
 		long item = 10000; // 잔여
 		long total = inMonth + dfItem + item; // 불량 포함 최종 잔여량
 
