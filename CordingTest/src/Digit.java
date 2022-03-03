@@ -1,9 +1,22 @@
+import java.util.Scanner;
 
 public class Digit {
 
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("입력 값");
+//		
+//		var input  = sc.nextInt();
+//	}
 	public int 자리수(int input) {
+		
+		
 		int times = 1;
 		int 자리수 = 0;
+		
+		
+		
+		
 		
 		while(true) {
 			if(자리수 == 10) {
@@ -55,6 +68,7 @@ public class Digit {
 			
 		}
 		return total;
+		
 	}
 }
 

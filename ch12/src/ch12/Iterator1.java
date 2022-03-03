@@ -19,15 +19,15 @@ public class Iterator1 {
 		list.add(new Student("자바짱",1,2));
 		list.add(new Student("홍길동",2,1));
 		
-//		Iterator<Student> it = list.iterator();
-		Iterator it = list.iterator();
+		Iterator<Student> it = list.iterator();
+//		Iterator it = list.iterator();
 		while(it.hasNext()) {
 //			Student s = (Student)it.next(); // 지네릭스를 사용하지 않으면 형변환 필요.
 //			Student s = it.next();
 //			System.out.println(s.name);
 			
 			System.out.println(it.next().name);
-			System.out.println(((Student)it.next()).name);
+//			System.out.println(((Student)it.next()).name);
 		
 		}
 	} // main
