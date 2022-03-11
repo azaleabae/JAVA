@@ -27,14 +27,22 @@ class Thread7 {
 	public static void main(String args[]) {
 		ThreadEx8_1 th1 = new ThreadEx8_1();
 		ThreadEx8_2 th2 = new ThreadEx8_2();
-		th1.start(); th2.start();
+		th1.start(); 
+		th2.start();
 
-		try {
-			th1.sleep(2000);	// th1을 2초동안 잠자게?
-		} catch(InterruptedException e) {}
-
+//		try {
+//			Thread.sleep(2000);	// th1을 2초동안 잠자게? th1.이 잠드는게 아니라 Thread가 잠드는 것 여기서는(main)
+//		} catch(InterruptedException e) {} // 발생하면 깨어남 문제가 있는게 아니라 깨워야 되서 예외처리 해준것 
+		
+		delay(2*1000);
 		System.out.print("<<main 종료>>");
 	} // main
+	
+	static void delay(long millis) {
+		try {
+			Thread.sleep(millis);	// th1을 2초동안 잠자게? th1.이 잠드는게 아니라 Thread가 잠드는 것 여기서는(main)
+		} catch(InterruptedException e) {} // 발생하면 깨어남. 문제가 있는게 아니라 깨워야 되서 예외처리 해준것 
+	}
 }
 
 class ThreadEx8_1 extends Thread {

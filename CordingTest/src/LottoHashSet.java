@@ -30,9 +30,9 @@ public class LottoHashSet {
 		
 		for(int n = 0; n < 6; n++) {
 			System.out.print(list.get(n)+ " "); // 
-//			System.out.print(" *보너스 값은 " + bonus + "입니다.*");
-			
 		}
+		System.out.print(" *보너스 값은 " + list.get(7) + "입니다.*");
+		
 		
 		// math.random() 으로 생성 
 		
