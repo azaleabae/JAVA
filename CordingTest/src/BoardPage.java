@@ -7,11 +7,12 @@ import java.util.Scanner;
 	// 출력: 총페이지수
 
 
-public class Wenti6 {
+public class BoardPage {
 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("총 건수를 입력해주세요.");
 		int total = sc.nextInt();
 		
@@ -19,18 +20,12 @@ public class Wenti6 {
 		int item = sc.nextInt();
 		
 		int page = total / item;
-		
 		if(page % 2 == 0) {
-			System.out.println("총건수는 "+ total +"이며 한페이지에 보여줄 게시물 수는 " + item +"입니다.");
 			System.out.println("필요한 페이지의 수는 " + page + "입니다.");
-		} else if(page % 2 == 1) {
-			System.out.println("총건수는 "+ total +"이며 한페이지에 보여줄 게시물 수는 " + item +"입니다.");
+		} else if(page % 2 == 1) {	
 			System.out.println("필요한 페이지의 수는 " + (page+1)  + "입니다.");
 		}
-		
-
 	}
-
 }
 
 // 다른 사람이 람다로 풀어놓은거 

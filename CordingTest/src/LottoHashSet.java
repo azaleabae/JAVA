@@ -10,7 +10,6 @@ public class LottoHashSet {
 		System.out.println("인생 직진");
 		Set set = new HashSet();
 
-//		for (int i = 0; set.size() < 7; i++) {
 		for (int i = 0; set.size() < 7; i++) {
 			int num = (int) (Math.random() * 45) + 1;
 //			set.add(new Integer(num)); 아랫줄과 동일

@@ -2,7 +2,7 @@
 public class Wenti9 {
 	
 	    public static void main(String[] args) {
-	        int[] s={1, 3, 4, 8, 13, 17, 20,};
+	        int[] s={1, 3, 4, 8, 13, 17, 20, 21};
 	        System.out.println(findMinDist(s));
 	    }
 	    private static String findMinDist(int[] input) {

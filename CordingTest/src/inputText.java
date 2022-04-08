@@ -21,7 +21,7 @@ public class inputText {
 		for (int i = 0 ; i < count ; i++) {
 			num[i] = scanner.nextInt();		
 		}
-		
+		 
 		// 검색할 숫자 받기 
 		System.out.print("검색할 숫자는 ? :");
 		search = scanner.nextInt();

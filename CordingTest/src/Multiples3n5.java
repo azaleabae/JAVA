@@ -17,15 +17,3 @@ public class Multiples3n5 {
 	}
 
 }
-
-
-
-// 다른 사람이 풀어 놓은거 
-//import java.util.stream.IntStream;
-//public static void main(String[] args) {
-//    System.out.println(String.format("정답: %d", foo(1000)));
-//}
-//
-//private static int foo(int end) {
-//    return IntStream.range(1, end).filter(j -> j%3==0 || j%5==0).sum();
-//}
